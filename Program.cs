@@ -6,7 +6,15 @@ namespace OOP_example
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Shooter Doom = new Shooter(1);
+            Doom.connect();
+            Doom.soloPlay(); 
+            Console.WriteLine($"Doom is currently running for " + Doom.gameType + " mode.");
+            Doom.stopGame();
+            Doom.disconnect();
+
+            Game Game = new Shooter(5);
+            IClassGame Shooter = new Shooter(2);
         }
     }
 }
